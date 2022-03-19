@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -34,27 +34,16 @@ body {
     text-underline-offset: 1rem;
 }
 
-/* .speaker-names {
+.speaker-names {
     display: grid;
-} */
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
 
 .speaker-images {
-    display: inline-block;
     border-radius: 100%;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 8px solid;
-    border-color:  rgba(150, 224, 238, 1) transparent  rgba(150, 224, 238, 1) transparent;
-    transform: rotate(-45deg);
 }
 
-.speaker-img {
-    width: 11rem;
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-
-/*
 .speaker-img {
     width: 11rem;
     border-radius: 100%;
@@ -68,8 +57,15 @@ body {
 
 .speaker-img:hover {
     transform: rotate(45deg);
-} */
+}
 
+/* .speaker-img {
+    width: 11rem;
+    background-image: url("./Images/Hrithik-bhaiya-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 9px solid;    
+} */
 
 .Team-section {
     padding: 3rem;
