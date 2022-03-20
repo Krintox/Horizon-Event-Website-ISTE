@@ -18,6 +18,7 @@ body {
 .speaker-heading {
     color: #96E0EE;
     font-family: "Poppins";
+    padding-left: 2rem;
 }
 
 .speaker-heading span {
@@ -27,6 +28,7 @@ body {
 .judges-heading {
     color: white;
     font-family: "Poppins";
+    padding-left: 2rem;
 }
 
 .judges-span {
@@ -38,34 +40,37 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
+    justify-content: space-around;
 }
 
 .speaker-images {
+    width: 12rem;
+    height: 12rem;
     border-radius: 100%;
-}
-
-.speaker-img {
-    width: 11rem;
-    border-radius: 100%;
-    padding: 0.2rem;
-    margin: 1rem 1rem;
-    border: 9px solid;
-    border-color:  rgba(150, 224, 238, 1) transparent  rgba(150, 224, 238, 1) transparent;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 13px solid;
+    border-color: rgba(150, 224, 238, 1) transparent  rgba(150, 224, 238, 1) transparent;
     transform: rotate(-45deg);
-    transition: 0.2s;
+    transition: 0.5s;
+    padding: 0.2rem;
 }
 
-.speaker-img:hover {
+.speaker-images:hover {
     transform: rotate(45deg);
 }
 
-/* .speaker-img {
-    width: 11rem;
-    background-image: url("./Images/Hrithik-bhaiya-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 9px solid;    
-} */
+.speaker-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.speaker-img:hover {
+    transform: rotate(-45deg);
+}
 
 .Team-section {
     padding: 3rem;
@@ -91,36 +96,43 @@ body {
     color: white;
 }
 
-.convenor-section-images {
-    display: flex;
-    grid-template-columns: auto auto auto;
+.convenor-section {
+    justify-content: center;
+    vertical-align: middle;
     text-align: center;
 }
 
-.convenor-section {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    vertical-align: middle;
+.convenor-section-images {
+    display: flex;
+    justify-content: space-around;
 }
 
 .convenor-image-div {
-    width: 50%;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 100%;
+    border: 13px solid;
+    border-color: rgba(150, 224, 238, 1) transparent  rgba(150, 224, 238, 1) transparent;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    margin-top: 3rem;
+    padding: 0.2rem;
+}
+
+.convenor-image-div:hover {
+    transform: rotate(45deg);
 }
 
 .convenor-image {
-    width: 11rem;
+    width: 100%;
+    height: 100%;
     border-radius: 100%;
-    padding: 0.2rem;
-    border: 9px solid;
-    border-color:  rgba(150, 224, 238, 1) transparent  rgba(150, 224, 238, 1) transparent;
-    transform: rotate(-45deg);
-    transition: 0.2s;
-    margin-top: 3rem;
+    transform: rotate(45deg);
+    transition: 0.5s;
 }
 
 .convenor-image:hover {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 
 .junior-core-carousel {
@@ -143,21 +155,28 @@ body {
     background-color: white;
 }
 
+.junior-core-carousel-2 {
+    display: none;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 2rem;
+}
+
 .carousel-arrows {
     color: white;
     text-align: center;
 }
 
-.fa-solid {
+.fa-solid-btn {
     padding: 1rem;
     border: 1px solid white;
     border-radius: 100%;
     margin: 1rem;
     transition: 0.2s;
     cursor: pointer;
+    outline: none;
 }
 
-.fa-solid:hover {
+.fa-solid-btn:hover {
     background-color: white;
     color: black;
 }
