@@ -161,6 +161,18 @@ body {
     margin: 2rem;
 }
 
+.junior-core-carousel-3 {
+    display: none;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 2rem;
+}
+
+.junior-core-carousel-4 {
+    display: none;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 2rem;
+}
+
 .carousel-arrows {
     color: white;
     text-align: center;
@@ -177,6 +189,6 @@ body {
 }
 
 .fa-solid-btn:hover {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
