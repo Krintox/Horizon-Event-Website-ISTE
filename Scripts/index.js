@@ -24,15 +24,13 @@ function displayBool() {
         secondCarousel.style.display = "none";
         thirdCarousel.style.display = "grid";
         fourthCarousel.style.display = "none";
-        nextBtn.removeAttribute('disabled', '')
-    
+        nextBtn.removeAttribute('disabled', '')    
     } else if(count === 3){
         firstCarousel.style.display = "none";
         secondCarousel.style.display = "none";
         thirdCarousel.style.display = "none";
         fourthCarousel.style.display = "grid";
-        nextBtn.setAttribute('disabled', '')
-    
+        nextBtn.setAttribute('disabled', '')    
     }
 }
 
